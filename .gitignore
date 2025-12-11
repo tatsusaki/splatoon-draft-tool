@@ -1,0 +1,6 @@
+# Clasp configuration files (contain sensitive scriptId)
+.clasp.json
+**/.clasp.json
+
+# Clasp local files
+.claspignore
