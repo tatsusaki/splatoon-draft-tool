@@ -49,14 +49,14 @@ const CFG = {
 
 // =====　カスタムメニュー追加　======
 function admin_openControlCenter(){
-  const html = HtmlService.createHtmlOutputFromFile('ControlCenter')
+  const html = HtmlService.createHtmlOutputFromFile('src_ControlCenter')
     .setTitle('ドラフト運営センター')
     .setWidth(420);
   SpreadsheetApp.getUi().showSidebar(html);
 }
 
 function admin_openControlCenterDialog(){
-  const html = HtmlService.createHtmlOutputFromFile('ControlCenter')
+  const html = HtmlService.createHtmlOutputFromFile('src_ControlCenter')
     .setTitle('ドラフト運営センター')
     .setWidth(800)
     .setHeight(600);
@@ -368,7 +368,7 @@ function doGet(e){
     return HtmlService.createHtmlOutput('<h1>アクセス権限がありません</h1><p>このスプレッドシートへのアクセス権限が必要です。<br>スプレッドシートの共有設定で、あなたのアカウントにアクセス権限を付与してください。</p>');
   }
   
-  return HtmlService.createHtmlOutputFromFile('ControlCenter')
+  return HtmlService.createHtmlOutputFromFile('src_ControlCenter')
     .setTitle('ドラフト運営センター')
     .setWidth(800)
     .setHeight(600);
